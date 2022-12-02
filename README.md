@@ -65,10 +65,10 @@ sample data link : https://drive.google.com/drive/folders/1P_cMksFicHEYPuC0Nb2MY
 ## Code execution
 
 ### Risk Assessment Prediction (optional)
-We provided risk assessment prediction results preserved in json format for each algorithm. Alternatively, one can generate by following the instruction in [risk_assessment/models](https://github.com/HCIS-Lab/RiskBench/tree/main/risk_assessment/models). We will release a intergrated API soon!
+We provided risk assessment prediction results preserved in json format for each algorithm. Alternatively, one can generate by following the instructions in [risk_assessment/models](https://github.com/HCIS-Lab/RiskBench/tree/main/risk_assessment/models). We will release an intergrated API soon!
 
 ### Offline Risk Assessment Evaluation
-We perform offline risk assessment evaluation (with metric F-1 score and PIC) by taking input as preserved risk assessment prediction:
+We perform offline risk assessment evaluation (with metrics F-1 score and PIC) by taking input as preserved risk assessment prediction:
 ```
 python risk_assessment_identification.py --path {PREDICTION_PATH} --model {MODEL} --metric {METRIC} --scenario {ATTRIBUTE}
 ```
@@ -86,7 +86,7 @@ Arguments:
 
 ### Planning-aware Risk Assessment
 ![planning aware ](images/planning_aware.gif)
-Planning-aware risk assessment evaluation takes place in CARLA simulaotr. We provide the materials (vehicle's control and random seed) to reproduce all testing scenarios.
+Planning-aware risk assessment evaluation takes place in CARLA simulator. We provide the materials (vehicle's control and random seed) to reproduce all testing scenarios.
 
 step 1: move the recorded scenarios to the CARLA folder
 ```
